@@ -88,10 +88,10 @@ t.clear()
 t.rt(90)
 plano_cartesiano()
 t.pu()
-t.goto(0,0)
+t.goto(-500,-500)
 t.pd()
-for x in range(0,400):
-    t.goto(x,desafio4(x/50)*10)
+for x in range(-500,400):
+    t.goto(x,desafio4(x/50))
 sleep(2)
 t.clear()
 
