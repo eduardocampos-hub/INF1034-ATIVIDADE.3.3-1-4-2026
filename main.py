@@ -21,6 +21,9 @@ def desafio4(x):
 
 def desafio5(x):
     return  x**2 - 5*x + 6
+
+def desafio6(x):
+    return x**3 - x**2 - x + 1
 #plano cartesiano--------------------------------------------------|
 def plano_cartesiano():
     ## eixo x
@@ -51,6 +54,8 @@ def plano_cartesiano():
 
 # print(list(range(-100,100)))
 
+
+# desafio 1
 plano_cartesiano()
 t.pu()
 t.goto(0,raizdeX(0))
@@ -60,6 +65,8 @@ for x in range(10,400):
 
 sleep(2)
 t.clear()
+
+# desafio 2
 
 t.rt(90)
 plano_cartesiano()
@@ -74,6 +81,8 @@ for x in range(1,299):
 sleep(2)
 t.clear()
 
+# desafio 3
+
 t.rt(90)
 plano_cartesiano()
 t.pu()
@@ -84,6 +93,7 @@ for x in range(0,400):
 sleep(2)
 t.clear()
 
+#desafio 4
 
 t.rt(90)
 plano_cartesiano()
@@ -91,9 +101,11 @@ t.pu()
 t.goto(-500,-500)
 t.pd()
 for x in range(-500,400):
-    t.goto(x,desafio4(x/50))
+    t.goto(x,desafio4(x/5))
 sleep(2)
 t.clear()
+
+# desafio 5
 
 t.rt(90)
 plano_cartesiano()
@@ -102,6 +114,18 @@ t.goto(-100,400)
 t.pd()
 for x in range(-100,400):
     t.goto(x,desafio5(x))
+sleep(2)
+t.clear()
+
+# desafio 6
+
+t.rt(90)
+plano_cartesiano()
+t.pu()
+t.goto(-200,-500)
+t.pd()
+for x in range(-200,200):
+    t.goto(x,desafio6(x/50)*10)
 sleep(2)
 t.clear()
 
